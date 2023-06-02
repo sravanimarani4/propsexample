@@ -1,4 +1,3 @@
-import './App.css';
 import Movies from './props1';
 
 
