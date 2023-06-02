@@ -1,4 +1,4 @@
-import Movies from './props1';
+import Moviesex from './props1';
 
 
 
@@ -9,19 +9,29 @@ let imageUrl = "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/0
 function App() {
   return (
     <div className="App">
-     <Movies title = {title} imageUrl={imageUrl}/>
+     <Movies/>
+     <Moviesex title = {title} imageUrl={imageUrl}/>
+     <Movieswithprops title = {title} imageUrl={imageUrl}/>
     </div>
   );
 }
 
 
-// function Movies(){
-//   return(
-//     <div>
-//       <h1>{title}</h1>
-//       <img src={imageUrl}/>
-//     </div>
-//   )
+function Movies(){
+  return(
+    <div>
+      <h1>{title}</h1>
+      <img src={imageUrl} alt=''/>
+    </div>
+  )
+}
 
-// }
+function Movieswithprops(props){
+  return(
+    <div>
+      <h1>{props.title}</h1>
+      <img src={props.imageUrl} alt=''/>
+    </div>
+  )
+}
 export default App;

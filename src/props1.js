@@ -1,6 +1,6 @@
 import React from "react";
 
-function Movies(props){
+function Moviesex(props){
     return(
       <div>
         <h1>{props.title}</h1>
@@ -9,4 +9,4 @@ function Movies(props){
     )
   
   }
-  export default Movies;
+  export default Moviesex;
