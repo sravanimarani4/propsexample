@@ -5,7 +5,6 @@ import Moviesex from './props1';
 let title = "propsExample";
 let imageUrl = "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/06/cartoons-1655022560.jpg"
 
-
 function App() {
   return (
     <div className="App">
