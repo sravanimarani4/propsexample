@@ -1,36 +1,30 @@
-import Moviesex from './props1';
+import React from "react";
 
-
-
-let title = "propsExample";
-let imageUrl = "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/06/cartoons-1655022560.jpg"
+let movies1 = {
+  title : "parrot",
+  Image:"data:image/jpeg;base64,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"
+}
 
 function App() {
   return (
     <div className="App">
-     <Movies/>
-     <Moviesex title = {title} imageUrl={imageUrl}/>
-     <Movieswithprops title = {title} imageUrl={imageUrl}/>
+     <Movie/>
     </div>
   );
 }
 
-
-function Movies(){
+function Movie(){
   return(
     <div>
-      <h1>{title}</h1>
-      <img src={imageUrl} alt=''/>
+     <h1>{movies1.title}</h1>
+     <img src={movies1.Image} alt=""/>
+     {/* <img src = {props.Image} alt = ""/> */}
     </div>
   )
 }
 
-function Movieswithprops(props){
-  return(
-    <div>
-      <h1>{props.title}</h1>
-      <img src={props.imageUrl} alt=''/>
-    </div>
-  )
-}
+
+
+
+
 export default App;
