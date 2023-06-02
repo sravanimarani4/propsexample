@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Movies from './props1';
+
+
+
+let title = "propsExample";
+let imageUrl = "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/06/cartoons-1655022560.jpg"
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Movies title = {title} imageUrl={imageUrl}/>
     </div>
   );
 }
 
+
+// function Movies(){
+//   return(
+//     <div>
+//       <h1>{title}</h1>
+//       <img src={imageUrl}/>
+//     </div>
+//   )
+
+// }
 export default App;
