@@ -31,19 +31,7 @@ function App() {
           n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to  
           demonstrate the visual form of a document or a typeface without relying on meaningful content
           </p>
-        </li>
-
-        <li className='comment'>
-          <div className='comments-header'>
-            <h3 className='email'>email.email@.com</h3>
-            <h3>example3</h3>
-          </div>
-          <p className='message'>
-          n publishing and graphic design, Lorem ipsum is a placeholder text 
-          commonly used to demonstrate the visual form of a document or 
-          a typeface without relying on meaningful content.
-          </p>
-        </li> */}
+        </li>*/}
         {
           data.map((eachObj) => {
             const {id,email,name,body} = eachObj;
@@ -63,9 +51,4 @@ function App() {
     
   )
 }
-
-
-
-
-
-export default App
+export default App;
